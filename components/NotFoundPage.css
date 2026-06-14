@@ -1,0 +1,132 @@
+.fallback-container {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f8fafc;
+    font-family: sans-serif;
+}
+
+/* Main Dashboard Card Format Box */
+.fallback-card {
+    background: #ffffff;
+    max-width: 750px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Area */
+.error-header {
+    text-align: center;
+}
+
+.error-code {
+    font-size: 84px;
+    font-weight: 900;
+    color: #ff6347; /* Tomato Red Alert color for 404 */
+    margin: 0;
+    line-height: 1;
+}
+
+.error-title {
+    font-size: 26px;
+    color: #1a1a2e;
+    margin: 15px 0 10px 0;
+}
+
+.error-subtitle {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 30px 0;
+}
+
+/* CMS Description */
+.cms-intro-section h3, .routes-guide-section h3 {
+    font-size: 18px;
+    color: #1a1a2e;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cms-intro-section p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Routes List with Badges */
+.routes-guide-section {
+    margin-top: 25px;
+}
+
+.guide-text {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.routes-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.routes-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Badges for URL Paths */
+.route-badge {
+    background-color: #1a1a2e;
+    color: #00adb5; /* Cyan text */
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.route-desc {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* Main Action Button */
+.action-wrapper {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.back-to-safety-btn {
+    background-color: #00adb5; /* Cyan theme button */
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.back-to-safety-btn:hover {
+    background-color: #1a1a2e;
+}

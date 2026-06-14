@@ -1,0 +1,108 @@
+/* Individual Blog Card Container */
+.blog-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover Effect */
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Wrapper and Badge styling */
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Fixed height for image consistency */
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Image stretching se bachaega */
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover .card-image {
+    transform: scale(1.05); /* Soft zoom effect on hover */
+}
+
+/* Category Badge using Accent Color */
+.card-category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #00adb5; /* Accent / Cyan */
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* Content Area Styling */
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Ensures buttons align at bottom if description is short */
+}
+
+.card-date {
+    font-size: 13px;
+    color: #94a3b8; /* Text Muted */
+    margin-bottom: 8px;
+    display: block;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #1a1a2e; /* Primary Dark for readability */
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.card-description {
+    font-size: 15px;
+    color: #555555; /* Neutral grey for easy reading */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    /* Limit to 3 lines max for visual consistency */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Action Button */
+.read-more-btn {
+    color: #00adb5; /* Accent Color */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    align-self: flex-start; /* Button content ke size ka hi rahega */
+    transition: color 0.2s ease;
+}
+
+.read-more-btn .arrow {
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.read-more-btn:hover {
+    color: #1a1a2e; /* Hover par change to primary dark */
+}
+
+.read-more-btn:hover .arrow {
+    transform: translateX(4px); /* Arrow moves right on hover */
+}

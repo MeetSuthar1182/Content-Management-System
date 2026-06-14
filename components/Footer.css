@@ -1,0 +1,47 @@
+/* Footer Background and Wrapper */
+.main-footer {
+    background-color: #1a1a2e; /* Primary Dark (Navbar se matched) */
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Agar page par content kam ho, toh bhi footer bottom mein rahega */
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Light top border for separation */
+}
+
+/* Flexbox Layout for Center Alignment */
+.footer-container {
+    max-width: 900px; /* Blog list ke size se matching */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling inside footer */
+.footer-logo {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.footer-logo span {
+    color: #00adb5; /* Accent / Cyan */
+}
+
+/* Footer text / Copyright note */
+.footer-text {
+    color: #94a3b8; /* Text Muted */
+    font-size: 14px;
+}
+
+/* ========================================================
+   RESPONSIVE FOOTER (For Mobile Screens)
+   ======================================================== */
+@media screen and (max-width: 600px) {
+    .footer-container {
+        flex-direction: column; /* Mobile par stack vertical ho jayega */
+        gap: 10px;
+        text-align: center;
+    }
+}

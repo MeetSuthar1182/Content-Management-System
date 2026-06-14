@@ -1,0 +1,128 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a2e; /* Primary Dark */
+    padding: 15px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 100;
+}
+
+/* Logo styling */
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00adb5; /* Accent / Cyan */
+}
+
+/* Nav Links Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #eeeeee; /* Text White */
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00adb5;
+}
+
+/* Hamburger Menu Styling (Hidden on Desktop) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #eeeeee;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* ========================================================
+   RESPONSIVE MEDIA QUERY (For Mobile & Tablets)
+   ======================================================== */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1a1a2e;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* React Active State */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: relative;
+        top: 0;
+        background-color: #222831;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Hamburger Animation to 'X' in React */
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+        background-color: #00adb5;
+    }
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+        background-color: #00adb5;
+    }
+}

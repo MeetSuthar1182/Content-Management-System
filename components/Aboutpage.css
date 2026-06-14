@@ -1,0 +1,66 @@
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+/* Elegant Header Banner */
+.about-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1a2e; /* Primary Dark */
+    color: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.about-hero h1 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 16px;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Content Layout Grid */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* White Clean Cards for Paragraphs */
+.about-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.about-card h2 {
+    color: #1a1a2e;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #00adb5; /* Cyan Accent under headings */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-card p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.text-center {
+    text-align: left;
+}

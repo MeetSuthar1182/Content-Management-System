@@ -1,0 +1,177 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8fafc;
+    font-family: sans-serif;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-brand {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sidebar-brand span {
+    color: #00adb5;
+}
+
+.sidebar-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 14px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.sidebar-menu li:hover, .sidebar-menu li.active {
+    background-color: #00adb5;
+    color: #fff;
+}
+
+.sidebar-menu .logout-btn {
+    margin-top: auto;
+    background-color: rgba(255, 99, 71, 0.1);
+    color: #ff6347;
+}
+
+.sidebar-menu .logout-btn:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+/* Content Area Styling */
+.dashboard-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.dashboard-card h2 {
+    color: #1a1a2e;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+/* Form Styles */
+.blog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+}
+
+.blog-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.blog-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.blog-form input, .blog-form textarea {
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.blog-form input:focus, .blog-form textarea:focus {
+    border-color: #00adb5;
+}
+
+.submit-form-btn {
+    background-color: #00adb5;
+    color: white;
+    padding: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-form-btn:hover {
+    background-color: #1a1a2e;
+}
+
+.cancel-btn {
+    background-color: #e2e8f0;
+    color: #475569;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Table Design */
+.blog-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.blog-table th, .blog-table td {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.blog-table th {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-weight: 700;
+}
+
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.action-btn.edit {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.action-btn.delete {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
